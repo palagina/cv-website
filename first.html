@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="first.css">
+    <!-- this one should be the last one-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="first.js"></script>
+</head>
+
+<body class="body">
+
+    <!-- Navbar -->
+    <div class="topnav" id="topnav">
+        <ul>
+            <li>
+                <a class=" topnav-btn active" href="#about">About</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#projects">Projects</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#education">Education</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#work">Work</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#recommendations">Recommendations</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="about">
+        <img id="pic" src="images/siga.jpg" alt="my photo">
+        <div id="name-box">
+            <textbox class="textbox">
+                <h2 id='name'>Mariia Palagina</h2>
+                <p id='title'>Web-developer</p>
+            </textbox>
+        </div>
+		<div class="summary">
+		<p>SUMMARY</p>
+		<p>Business Information Technologies student with over 6 years of work experience as an administrative manager. 
+		During my work at various companies, I have been involved in administrative management, customer consulting, marketing, database management, 
+		event management and many other tasks. Being a student of software development program, I have acquired some expertise in web-development 
+		via school projects and currently I am looking for an opportunity to apply both my old and new knowledge into practice in order to build 
+		a career in software development field.</p>
+    </div>
+	  </div>
+
+    <!-- Skills -->
+	<div id="skills-section">
+
+    <h2 class="menu-items">Skills</h2>
+
+    <div class="filter-button-group">
+        <button class="filter" data-filter="*"> Show all</button>
+        <button class="filter" data-filter=".frontend"> Front-end</button>
+        <button class="filter" data-filter=".backend"> Back-end</button>
+        <button class="filter" data-filter=".other"> Other skills</button>
+    </div>
+    <div class="sort-button-group">
+        <button class="sort" data-sort-value="name">Sort by name</button>
+        <button class="sort" data-sort-value="experience">Sort by experience</button>
+    </div>
+
+    <div class="grid">
+        <div class="skill-item frontend" id="skill-item">
+            <p class="experience">7</p>
+            <img class="logo" src="images/html.png" alt="HTML logo"></img>
+            <h6 class="name">HTML5</h6>
+            <div class="rating-bar">
+                <div class="rate-7">
+                    <span class="animate green"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item frontend">
+            <p class="experience">6</p>
+            <img class="logo" src="images/css.png" alt="CSS logo"></img>
+            <h6 class="name">CSS </h6>
+            <div class="rating-bar">
+                <div class="rate-6">
+                    <span class="animate green"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item backend">
+            <p class="experience">5</p>
+            <img class="logo" src="images/java.png" alt="Java logo"></img>
+            <h6 class="name">Java </h6>
+            <div class="rating-bar">
+                <div class="rate-5">
+                    <span class="animate yellow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item backend">
+            <p class="experience">5</p>
+            <img class="logo" src="images/js.png" alt="Javascript logo"></img>
+            <h6 class="name">Javascript</h6>
+            <div class="rating-bar">
+                <div class="rate-5">
+                    <span class="animate yellow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item frontend">
+            <p class="experience">4</p>
+            <img class="logo" src="images/react.png" alt="React.js logo"></img>
+            <h6 class="name">React.js</h6>
+            <div class="rating-bar">
+                <div class="rate-4">
+                    <span class="animate yellow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item backend">
+            <p class="experience">3</p>
+            <img class="logo" src="images/spring.png" alt="Springboot logo"></img>
+            <h6 class="name">Springboot</h6>
+            <div class="rating-bar">
+                <div class="rate-3">
+                    <span class="animate red"></span>
+                </div>
+            </div>
+        </div>
+        <div class="skill-item other">
+            <p class="experience">8</p>
+            <img class="logo" src="images/adm.png" alt="Management icon"></img>
+            <h6 class="name">Management</h6>
+            <div class="rating-bar">
+                <div class="rate-8">
+                    <span class="animate green"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item other">
+            <p class="experience">5</p>
+            <img class="logo" src="images/marketing.png" alt="Marketing icon"></img>
+            <h6 class="name">Marketing</h6>
+            <div class="rating-bar">
+                <div class="rate-5">
+                    <span class="animate yellow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item other">
+            <p class="experience">9</p>
+            <img class="logo" src="images/eng.png" alt="English flag"></img>
+            <h6 class="name">English</h6>
+            <div class="rating-bar">
+                <div class="rate-9">
+                    <span class="animate blue"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item other">
+            <p class="experience">9</p>
+            <img class="logo" src="images/rus.png" alt="Russian flag"></img>
+            <h6 class="name">Russian</h6>
+            <div class="rating-bar">
+                <div class="rate-9">
+                    <span class="animate blue"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item other">
+            <p class="experience">5</p>
+            <img class="logo" src="images/port.png" alt="Portuguese flag"></img>
+            <h6 class="name">Portuguese</h6>
+            <div class="rating-bar">
+                <div class="rate-5">
+                    <span class="animate yellow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item backend">
+            <p class="experience">3</p>
+            <img class="logo" src="images/node.png" alt="Node.js icon"></img>
+            <h6 class="name">Node.js</h6>
+            <div class="rating-bar">
+                <div class="rate-3">
+                    <span class="animate red"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item other">
+            <p class="experience">8</p>
+            <img class="logo" src="images/sup.png" alt="support icon"></img>
+            <h6 class="name">Support</h6>
+            <div class="rating-bar">
+                <div class="rate-8">
+                    <span class="animate green"></span>
+                </div>
+            </div>
+        </div>
+        <div class="skill-item other">
+            <p class="experience">9</p>
+            <img class="logo" src="images/office.png" alt="ms office icon"></img>
+            <h6 class="name">MS Office</h6>
+            <div class="rating-bar">
+                <div class="rate-9">
+                    <span class="animate blue"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item backend">
+            <p class="experience">7</p>
+            <img class="logo" src="images/sql.png" alt="sql icon"></img>
+            <h6 class="name">SQL</h6>
+            <div class="rating-bar">
+                <div class="rate-7">
+                    <span class="animate green"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item frontend">
+            <p class="experience">4</p>
+            <img class="logo" src="images/jquery.png" alt="jquery logo"></img>
+            <h6 class="name">jQuery</h6>
+            <div class="rating-bar">
+                <div class="rate-4">
+                    <span class="animate yellow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item frontend">
+            <p class="experience">5</p>
+            <img class="logo" src="images/bootstrap.png" alt="bootstrap logo"></img>
+            <h6 class="name">Bootstrap</h6>
+            <div class="rating-bar">
+                <div class="rate-5">
+                    <span class="animate yellow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item backend">
+            <p class="experience">3</p>
+            <img class="logo" src="images/aspnet.png" alt="asp.net logo"></img>
+            <h6 class="name">ASP.NET</h6>
+            <div class="rating-bar">
+                <div class="rate-3">
+                    <span class="animate red"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	 </div>
+
+    <!-- Projects -->
+
+	 <div id=projects-section>
+    <h2 class="menu-items">Projects</h2>
+
+    <div id="projects-tile-container">
+        <a href="#" target="_blank" class="projects-tile" data-role="tile" data-size="wide" data-effect="hover-zoom-right">
+            <div class="slide-front">
+                <img src="images/cvweb.png" class="w-100">
+            </div>
+            <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                <p class="text-center">
+                    My online CV website
+                </p>
+            </div>
+            <span class="branding-bar fg-dark"></span>
+        </a>
+
+        <a href="https://github.com/palagina/ReactFitnessApp" target="_blank" class="projects-tile" data-role="tile" data-size="wide"
+            data-effect="hover-zoom-left">
+            <div class="slide-front">
+                <img src="images/trainapp.jpg" class="w-100">
+            </div>
+            <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                <p class="text-center">
+                    Personal trainer fitness app</br> (React.js)</p>
+            </div>
+            <span class="branding-bar fg-dark"></span>
+        </a>
+
+        <a href="https://github.com/palagina/VinylShopApp/tree/master/vinylshop" target="_blank" class="projects-tile" data-role="tile"
+            data-size="wide" data-effect="hover-zoom-up">
+            <div class="slide-front">
+                <img src="images/discdb.png" class="h-100">
+            </div>
+            <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                <p class="text-center">
+                    Vinyl disc shop app</br> (Spring Boot, Maven) </p>
+            </div>
+            <span class="branding-bar fg-dark"></span>
+        </a>
+
+
+
+        <a href="https://github.com/palagina/VinylShopApp/tree/master/vinylshop" target="_blank" class="projects-tile" data-role="tile"
+            data-size="wide" data-effect="hover-zoom-up">
+            <div class="slide-front">
+                <img src="images/discdb.png" class="h-100">
+            </div>
+            <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                <p class="text-center">
+                    Vinyl disc shop app</br> (Spring Boot, Maven) </p>
+            </div>
+            <span class="branding-bar fg-dark"></span>
+        </a>
+
+        <a href="#" target="_blank" class="projects-tile" data-role="tile" data-size="wide" data-effect="hover-zoom-right">
+            <div class="slide-front">
+                <img src="images/cvweb.png" class="w-100">
+            </div>
+            <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                <p class="text-center">
+                    My online CV website
+                </p>
+            </div>
+            <span class="branding-bar fg-dark"></span>
+        </a>
+
+        <a href="https://github.com/palagina/ReactFitnessApp" target="_blank" class="projects-tile" data-role="tile" data-size="wide"
+            data-effect="hover-zoom-left">
+            <div class="slide-front">
+                <img src="images/trainapp.jpg" class="w-100">
+            </div>
+            <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                <p class="text-center">
+                    Personal trainer fitness app</br> (React.js)</p>
+            </div>
+            <span class="branding-bar fg-dark"></span>
+        </a>
+
+    </div>
+    </div>
+
+    <!-- Education -->
+    <h2 class="menu-items" id="education">Education</h2>
+
+    <div class="timeline">
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h5>2004 - 2009</h5>
+                <p>ENGLISH AND PORTUGUESE LINGUISTICS</p>
+                <p>Master's degree in linguistics and trainslation/interpretation acquired at The Academy of Federal Security
+                    Service of Russia.</p>
+            </div>
+        </div>
+        <div class="timeline-container right">
+            <div class="timeline-content">
+                <h5>2014 - 2017</h5>
+                <p>HOSPITALITY, TOURISM AND EXPERIENCE MANAGEMENT</p>
+                <p>Bachelor's degree from Haaga-Helia University of Applied Sciences, major studies I chose were related to
+                    tourism experience and general business studies.</p>
+            </div>
+        </div>
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h5>2017 - now</h5>
+                <p>BUSINESS INFORMATION TECHNOLOGIES</p>
+                <p>Bachelor's degree from Haaga-Helia University of Applied Sciences, majoring in Software Development, GPA
+                    4.6. Currently studying at the 4th semester.</p>
+            </div>
+        </div>
+        <div class="timeline-container right">
+            <div class="timeline-content">
+                <h5>2017</h5>
+                <p>CAMBRIDGE VENTURE CAMP</p>
+                <p>A business development program for the start-up idea contest winners at The University of Cambridge.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work -->
+    <h2 class="menu-items" id="work">Work</h2>
+
+    <div class="work-flex-container" id="work-popup-button">
+        <div class="work-flex">
+            <h4>PADI Int.Ltd.</h4>
+            <p>2010-2012</p>
+        </div>
+
+        <div id="workPopup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <p>Wörk wörk wörk wörk wörk...</p>
+            </div>
+
+        </div>
+
+        <div class="work-flex">Haaga-Helia StartUp School</div>
+        <div class="work-flex">InsideOut Escape Games Oy</div>
+    </div>
+
+    <!-- Recommendations -->
+    <h2 class="menu-items" id="recommendations">Recommendations</h2>
+
+    <!-- Contact -->
+    <h2 class="menu-items" id="contact">Contact</h2>
+
+    <div id="contact-container">
+        <ul id="contact-form">
+            <li>
+                <a href="tel:+358413680029">
+                    <img class="contact-icon" src="images/phone.png" alt="phone icon"> +358 41 3680 029
+                </a>
+            </li>
+            <li>
+                <a href="mailto:mariia.palagina@gmail.com">
+                    <img class="contact-icon" src="images/email.png" alt="email icon"> mariia.palagina@gmail.com
+                </a>
+            </li>
+            <li>
+                <a href="https://fi.linkedin.com/in/mariia-palagina">
+                    <img class="contact-icon" src="images/linkedin.png" alt="linkedin icon"> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/palagina">
+                    <img class="contact-icon" src="images/github.png" alt="github icon"> Github
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

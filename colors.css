@@ -1,0 +1,31 @@
+body {
+    background-color: #DDFEF3;
+    color: #141414;}
+
+    .topnav li a.active {
+        background-color: #247058;
+        color: white;
+      }
+
+.filter, .sort {
+    color:  #141414;
+    background-color:#fafcfb;}
+
+.filter:hover {background-color: #79BEA8}
+.sort:hover {background-color: #79BEA8}
+
+background-color:rgba(121,190,168,0.5);
+
+.skill-item {
+    background: #fafcfb;
+    color: #141414;}
+
+.skill-item:hover {
+    background-color: #79BEA8;}
+
+.topnav{
+        background-color: #79BEA8;}
+
+.topnav a{
+    color: #f2f2f2;
+    background-color: #79BEA8;}
