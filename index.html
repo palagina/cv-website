@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- this one should be the last one-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body class="body">
+
+    <!-- Navbar -->
+    <div class="topnav" id="topnav">
+        <ul>
+            <li>
+                <a class=" topnav-btn active" href="#about">About</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#projects">Projects</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#education">Education</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#work">Work</a>
+            </li>
+            <li>
+                <a class="topnav-btn" href="#recommendations">References</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </ul>
+
+    </div>
+
+    <div id="about">
+        <div>
+            <img id="pic" src="images/main.jpg" alt="my photo">
+            <div id="name-box">
+                <textbox class="textbox">
+                    <h2 id='name'>Mariia Palagina</h2>
+                    <p id='title'>Web-developer</p>
+                </textbox>
+            </div>
+        </div>
+
+        <h2 class="menu-items">SUMMARY</h2>
+        <p id="summary">Business Information Technologies student with over 6 years of work experience as an administrative manager. During
+            my work at various companies, I have been involved in administrative management, customer consulting, marketing,
+            database management, event management and many other tasks. Being a student of software development program,
+            I have acquired some expertise in web-development via school projects and currently I am looking for an opportunity
+            to apply both my old and new knowledge into practice in order to build a career in software development field.</p>
+    </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills-section">
+
+        <h2 class="menu-items" id="skills">Skills</h2>
+
+        <div class="filter-button-group">
+            <button class="filter" data-filter="*"> Show all</button>
+            <button class="filter" data-filter=".frontend"> Front-end</button>
+            <button class="filter" data-filter=".backend"> Back-end</button>
+            <button class="filter" data-filter=".other"> Other skills</button>
+        </div>
+        <div class="sort-button-group">
+            <button class="sort" data-sort-value="name">Sort by name</button>
+            <button class="sort" data-sort-value="experience">Sort by experience</button>
+        </div>
+
+        <div class="grid">
+            <div class="skill-item frontend" id="skill-item">
+                <p class="experience">7</p>
+                <img class="logo" src="images/html.png" alt="HTML logo"></img>
+                <h6 class="name">HTML5</h6>
+                <div class="rating-bar">
+                    <div class="rate-7">
+                        <span class="animate green"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item frontend">
+                <p class="experience">6</p>
+                <img class="logo" src="images/css-icon.png" alt="CSS logo"></img>
+                <h6 class="name">CSS </h6>
+                <div class="rating-bar">
+                    <div class="rate-6">
+                        <span class="animate green"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item backend">
+                <p class="experience">5</p>
+                <img class="logo" src="images/java.png" alt="Java logo"></img>
+                <h6 class="name">Java </h6>
+                <div class="rating-bar">
+                    <div class="rate-5">
+                        <span class="animate yellow"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item backend">
+                <p class="experience">5</p>
+                <img class="logo" src="images/js.png" alt="Javascript logo"></img>
+                <h6 class="name">Javascript</h6>
+                <div class="rating-bar">
+                    <div class="rate-5">
+                        <span class="animate yellow"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item frontend">
+                <p class="experience">4</p>
+                <img class="logo" src="images/react.png" alt="React.js logo"></img>
+                <h6 class="name">React.js</h6>
+                <div class="rating-bar">
+                    <div class="rate-4">
+                        <span class="animate yellow"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item backend">
+                <p class="experience">3</p>
+                <img class="logo" src="images/spring.png" alt="Springboot logo"></img>
+                <h6 class="name">Springboot</h6>
+                <div class="rating-bar">
+                    <div class="rate-3">
+                        <span class="animate red"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-item other">
+                <p class="experience">8</p>
+                <img class="logo" src="images/adm.png" alt="Management icon"></img>
+                <h6 class="name">Management</h6>
+                <div class="rating-bar">
+                    <div class="rate-8">
+                        <span class="animate green"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item other">
+                <p class="experience">5</p>
+                <img class="logo" src="images/marketing.png" alt="Marketing icon"></img>
+                <h6 class="name">Marketing</h6>
+                <div class="rating-bar">
+                    <div class="rate-5">
+                        <span class="animate yellow"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item other">
+                <p class="experience">9</p>
+                <img class="logo" src="images/eng.png" alt="English flag"></img>
+                <h6 class="name">English</h6>
+                <div class="rating-bar">
+                    <div class="rate-9">
+                        <span class="animate blue"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item other">
+                <p class="experience">9</p>
+                <img class="logo" src="images/rus.png" alt="Russian flag"></img>
+                <h6 class="name">Russian</h6>
+                <div class="rating-bar">
+                    <div class="rate-9">
+                        <span class="animate blue"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item other">
+                <p class="experience">5</p>
+                <img class="logo" src="images/port.png" alt="Portuguese flag"></img>
+                <h6 class="name">Portuguese</h6>
+                <div class="rating-bar">
+                    <div class="rate-5">
+                        <span class="animate yellow"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item backend">
+                <p class="experience">3</p>
+                <img class="logo" src="images/node.png" alt="Node.js icon"></img>
+                <h6 class="name">Node.js</h6>
+                <div class="rating-bar">
+                    <div class="rate-3">
+                        <span class="animate red"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item other">
+                <p class="experience">8</p>
+                <img class="logo" src="images/sup.png" alt="support icon"></img>
+                <h6 class="name">Support</h6>
+                <div class="rating-bar">
+                    <div class="rate-8">
+                        <span class="animate green"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-item other">
+                <p class="experience">9</p>
+                <img class="logo" src="images/office.png" alt="ms office icon"></img>
+                <h6 class="name">MS Office</h6>
+                <div class="rating-bar">
+                    <div class="rate-9">
+                        <span class="animate blue"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item backend">
+                <p class="experience">7</p>
+                <img class="logo" src="images/sql.png" alt="sql icon"></img>
+                <h6 class="name">SQL</h6>
+                <div class="rating-bar">
+                    <div class="rate-7">
+                        <span class="animate green"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item frontend">
+                <p class="experience">4</p>
+                <img class="logo" src="images/jquery.png" alt="jquery logo"></img>
+                <h6 class="name">jQuery</h6>
+                <div class="rating-bar">
+                    <div class="rate-4">
+                        <span class="animate yellow"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item frontend">
+                <p class="experience">5</p>
+                <img class="logo" src="images/bootstrap.png" alt="bootstrap logo"></img>
+                <h6 class="name">Bootstrap</h6>
+                <div class="rating-bar">
+                    <div class="rate-5">
+                        <span class="animate yellow"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item backend">
+                <p class="experience">3</p>
+                <img class="logo" src="images/aspnet.png" alt="asp.net logo"></img>
+                <h6 class="name">ASP.NET</h6>
+                <div class="rating-bar">
+                    <div class="rate-3">
+                        <span class="animate red"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Projects -->
+
+    <div id=projects-section>
+        <h2 class="menu-items" id="projects">Projects</h2>
+
+        <div id="projects-tile-container">
+
+            <a href="#" target="_blank" class="projects-tile" data-role="tile" data-size="wide" data-effect="hover-zoom-right">
+                <div class="slide-front">
+                    <img src="images/cvweb.png" class="w-100">
+                </div>
+                <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                    <div style="font-size: 15px; text-align: center">
+                        <h4>CV website</h4>
+                        </br>
+                        My personal CV website. Made with the use of HTML5, CSS, jQuery, Javascript, Bootstrap.
+                    </div>
+                </div>
+                <span class="branding-bar fg-dark"></span>
+            </a>
+
+            <a href="https://github.com/palagina/ReactFitnessApp" target="_blank" class="projects-tile" data-role="tile" data-size="wide"
+                data-effect="hover-zoom-left">
+                <div class="slide-front">
+                    <img src="images/trainapp.jpg" class="h-100">
+                </div>
+                <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                    <div style="font-size: 15px; text-align: center">
+                        <h4>Fitness app</h4>
+                        </br>
+                        React.js school project in Front-end development course. Aim: creating a customers and trainings application for a personal
+                        trainer. Project made individually.
+                    </div>
+                </div>
+                <span class="branding-bar fg-dark"></span>
+            </a>
+
+            <a href="https://github.com/palagina/VinylShopApp/tree/master/vinylshop" target="_blank" class="projects-tile" data-role="tile"
+                data-size="wide" data-effect="hover-zoom-up">
+                <div class="slide-front">
+                    <img src="images/discdb.png" class="h-100">
+                </div>
+                <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                    <div style="font-size: 15px; text-align: center">
+                        <h4>Vinyl disk shop</h4>
+                        </br>
+                        Vinyl disk shop Maven project made for Server Programming course with the use of Springboot. Project made individually.
+                    </div>
+                </div>
+                <span class="branding-bar fg-dark"></span>
+            </a>
+
+            <a href="http://toughviking.se/en/" target="_blank" class="projects-tile" data-role="tile" data-size="wide" data-effect="hover-zoom-up">
+                <div class="slide-front">
+                    <img src="images/viking.jpg" class="w-100">
+                </div>
+                <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                    <div style="font-size: 15px; text-align: center">
+                        <h4>Tough Viking Race 2014</h4>
+                        </br>
+                        Volunteering as first aid assistant at Tough Viking Race 2014 in Helsinki
+                    </div>
+                </div>
+                <span class="branding-bar fg-dark"></span>
+            </a>
+
+            <a href="http://escapetrainmystery.com/" target="_blank" class="projects-tile" data-role="tile" data-size="wide" data-effect="hover-zoom-right">
+                <div class="slide-front">
+                    <img src="images/escape.jpg" class="h-100">
+                </div>
+                <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                    <div style="font-size: 15px; text-align: center">
+                        <h4>Escape Train</h4>
+                        </br>
+                        Project developer and actress at 13-hour escape room immersive theatre experience on a train Helsinki-Rovaniemi.
+                    </div>
+                </div>
+                <span class="branding-bar fg-dark"></span>
+            </a>
+
+            <a href="http://www.slush.org/" target="_blank" class="projects-tile" data-role="tile" data-size="wide" data-effect="hover-zoom-left">
+                <div class="slide-front">
+                    <img src="images/slush.png" class="w-100">
+                </div>
+                <div class="projects-tile-text slide-back d-flex flex-justify-center flex-align-center p-4">
+                    <div style="font-size: 15px; text-align: center">
+                        <h4>Slush 2016</h4>
+                        </br>
+                        Working at Slush 2016 in volunteer zone, providing escape wall game entertainment to the volunteers.
+                    </div>
+                </div>
+                <span class="branding-bar fg-dark"></span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Education -->
+
+    <div id="education-section">
+        <h2 class="menu-items" id="education">Education</h2>
+
+        <div class="timeline">
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <h5>2004 - 2009</h5>
+                    <p>ENGLISH AND PORTUGUESE LINGUISTICS</p>
+                    <p>Master's degree in linguistics and trainslation/interpretation acquired at The Academy of Federal Security
+                        Service of Russia.</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <h5>2014 - 2017</h5>
+                    <p>HOSPITALITY, TOURISM AND EXPERIENCE MANAGEMENT</p>
+                    <p>Bachelor's degree from Haaga-Helia University of Applied Sciences, major studies I chose were related
+                        to tourism experience and general business studies.</p>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <h5>2017 - now</h5>
+                    <p>BUSINESS INFORMATION TECHNOLOGIES</p>
+                    <p>Bachelor's degree from Haaga-Helia University of Applied Sciences, majoring in Software Development,
+                        GPA 4.6. Currently studying at the 4th semester.</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <h5>2017</h5>
+                    <p>CAMBRIDGE VENTURE CAMP</p>
+                    <p>A business development program for the start-up idea contest winners at The University of Cambridge.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work -->
+    <div id="work-section">
+
+        <h2 class="menu-items" id="work">Work</h2>
+
+        <div class="work-flex-container">
+
+            <div class="work-flex" id="padi-button">
+                <div class="work-text">
+                    <h3>PADI EMEA Ltd.</h3>
+                    <p>2010-2012</p>
+                    <p>Secretary and Customer Support Manager</p>
+                </div>
+            </div>
+
+            <div id="padiPopup" class="popup">
+                <div class="popup-content">
+                    <span id="closePadi" class="close">&times;</span>
+                    <h3>PADI EMEA Ltd.</h3>
+                    <p>2010-2012</p>
+                    <p>Secretary and Customer Support Manager</p>
+                    <div>
+                        <b>Duties: </b>
+                        </br> Consulting, database management, customer communication, marketing, translations, document workflow,
+                        communication between Russian and European offices.</div>
+                    </br>
+                    <a target="_blank" href="images/padi.jpg">
+                        <img class="recommendation-img" src="images/padi.jpg" alt="PADI recommendation letter">
+                    </a>
+                </div>
+            </div>
+
+            <div class="work-flex" id="sus-button">
+                <div class="work-text">
+                    <h3>Haaga-Helia StartUp School</h3>
+                    <p>January-June 2017</p>
+                    <p>Administrative Assistant</p>
+                </div>
+            </div>
+
+            <div id="susPopup" class="popup">
+                <div class="popup-content">
+                    <span id="closeSus" class="close">&times;</span>
+                    <h3>Haaga-Helia StartUp School</h3>
+                    <p>January-June 2017</p>
+                    <p>Administrative Assistant</p>
+                    <div>
+                        <b>Duties: </b>
+                        </br>Website management, event organization, communication, project management, marketing, consulting,
+                        public speaking, database and schedule management</div>
+                    </br>
+                    <a target="_blank" href="images/sus.jpg">
+                        <img class="recommendation-img" src="images/sus.jpg" alt="StartUp School recommendation letter">
+                    </a>
+                </div>
+            </div>
+
+            <div class="work-flex" id="ioe-button">
+                <div class="work-text">
+                    <h3>InsideOut Escape Games Oy</h3>
+                    <p>2014-2018</p>
+                    <p>Game Master and Administrative Manager</p->
+                </div>
+            </div>
+
+            <div id="ioePopup" class="popup">
+                <div class="popup-content">
+                    <span id="closeIoe" class="close">&times;</span>
+                    <h3>Haaga-Helia StartUp School</h3>
+                    <p>January-June 2017</p>
+                    <p>Administrative Assistant</p>
+                    <div>
+                        <b>Duties: </b>
+                        </br>Website management, event organization, communication, project management, marketing, consulting,
+                        public speaking, database and schedule management</div>
+                    </br>
+                    <a target="_blank" href="images/sus.jpg">
+                        <img class="recommendation-img" src="images/sus.jpg" alt="StartUp School recommendation letter">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recommendations -->
+    <div id="recommendations-section container">
+
+        <h2 class="menu-items" id="recommendations">References</h2>
+
+        <div id="refCarousel" class="carousel slide" data-ride="carousel">
+
+            <div class="testimonial-quote group carousel-inner">
+                <div class="quote-container item active">
+                    <blockquote>
+                        <p>"I am impressed with Mariia's positive attitude, in particular with the amount of energy she input
+                            during the project and in meeting project deadlines."</p>
+                    </blockquote>
+                    <cite>
+                        <span>Violeta Salonen</span>
+                        <br> Teacher
+                        <br> Haaga-Helia University of Applied Sciences
+                    </cite>
+                </div>
+
+                <div class="quote-container item">
+                    <blockquote>
+                        <p>Mariia is a team player, so very easy to work with and a great problem solver.</p>
+                    </blockquote>
+                    <cite>
+                        <span>Agnes Kaszas</span>
+                        <br> CEO
+                        <br> InsideOut Escape Games Oy
+                    </cite>
+                </div>
+
+                <div class="quote-container item">
+                    <blockquote>
+                        <p>During the work Mariia Palagina proved herself to be an ssiduous, conscientious, efficient and enterprising
+                            employee respected by the personnel and the administration.
+                        </p>
+                    </blockquote>
+                    <cite>
+                        <span>I.B Beresneva</span>
+                        <br> Director
+                        <br> PADI EMEA Ltd Russian Distribution Centre
+                    </cite>
+                </div>
+
+                <div class="quote-container item">
+                    <blockquote>
+                        <p>She is self-motivated, attentive to detail and skilled at both independent and collaborative work.
+                        </p>
+                    </blockquote>
+                    <cite>
+                        <span>Violeta Salonen</span>
+                        <br> Teacher
+                        <br> Haaga-Helia University of Applied Sciences
+                    </cite>
+                </div>
+
+                <div class="quote-container item">
+                    <blockquote>
+                        <p>Has has been one of the best employees we have had. She Is reliable, loyal, creative, accurate, strict
+                            with deadlines and very dedicated to her work.</p>
+                    </blockquote>
+                    <cite>
+                        <span>Agnes Kaszas</span>
+                        <br> CEO
+                        <br> InsideOut Escape Games Oy
+                    </cite>
+                </div>
+
+                <ol class="carousel-indicators">
+                    <li data-target="#refCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#refCarousel" data-slide-to="1"></li>
+                    <li data-target="#refCarousel" data-slide-to="2"></li>
+                    <li data-target="#refCarousel" data-slide-to="3"></li>
+                    <li data-target="#refCarousel" data-slide-to="4"></li>
+                </ol>
+            </div>
+
+            <!-- carousel controls -->
+            <a class="left carousel-control" href="#refCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#refCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact-section">
+
+        <h2 class="menu-items" id="contact">Contact</h2>
+
+        <ul id="contact-form">
+            <li>
+                <a href="tel:+358413680029">
+                    <img class="contact-icon" src="images/phone.png" alt="phone icon"> +358 41 3680 029
+                </a>
+            </li>
+            <li>
+                <a href="mailto:mariia.palagina@gmail.com">
+                    <img class="contact-icon" src="images/email.png" alt="email icon"> mariia.palagina@gmail.com
+                </a>
+            </li>
+            <li>
+                <a href="https://fi.linkedin.com/in/mariia-palagina">
+                    <img class="contact-icon" src="images/linkedin.png" alt="linkedin icon"> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/palagina">
+                    <img class="contact-icon" src="images/github.png" alt="github icon"> Github
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
