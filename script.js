@@ -92,6 +92,7 @@ $(document).ready(function () {
 
 
 function myFunction() {
+    console.log("trututu")
     var x = document.getElementById("topnav");
     if (x.className === "topnav") {
         x.className += " responsive";
