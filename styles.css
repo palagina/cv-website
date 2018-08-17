@@ -127,6 +127,7 @@ Show the link that contains should open and close the topnav (.icon) */
 #pic{
     background-image:url('images/main.jpg');
     height: 600px;
+    
     background-size: cover;
     background-position-y: center;
 }
