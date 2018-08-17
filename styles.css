@@ -1,9 +1,11 @@
 
-.body {
+body {
+    position: relative; 
     color: #141414;
     margin: 0px;
     font-family: 'Bitter', serif;
     background-color: white; 
+
 }
 
 .menu-items{
@@ -31,7 +33,7 @@
 
 .topnav ul {
     padding: 0px;
-	margin: -6px;
+	margin-bottom: -6px;
 }
 
 .topnav li {
@@ -143,6 +145,10 @@ Show the link that contains should open and close the topnav (.icon) */
 	color: white;
 	padding-bottom: 40px;
 	padding-top: 20px;
+}
+
+#skills{
+	color: white;
 }
 
 .grid{

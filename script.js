@@ -3,7 +3,12 @@
 $(document).ready(function () {
 
     //navbar
-    var topnavContainer = document.getElementById("topnav");
+    $('body').scrollspy({
+        target: "#myTopnav",
+        offset: 50
+    });
+
+    var topnavContainer = document.getElementById("myTopnav");
     var btns = topnavContainer.getElementsByClassName("topnav-btn");
 
     for (var i = 0; i < btns.length; i++) {
@@ -55,11 +60,11 @@ $(document).ready(function () {
         susPopup.style.display = "block";
     }
 
-   //Insideout module
-   var ioePopup = document.getElementById('ioePopup');
-   document.getElementById("ioe-button").onclick = function () {
-       ioePopup.style.display = "block";
-   }
+    //Insideout module
+    var ioePopup = document.getElementById('ioePopup');
+    document.getElementById("ioe-button").onclick = function () {
+        ioePopup.style.display = "block";
+    }
 
     // When the user clicks on (x), close the module
     var closePadi = document.getElementById('closePadi');
@@ -88,10 +93,10 @@ $(document).ready(function () {
         }
     }
 
-}) //end
+})
 
 
-function myFunction() {
+function mobileMenuFunction() {
     console.log("trututu")
     var x = document.getElementById("topnav");
     if (x.className === "topnav") {
