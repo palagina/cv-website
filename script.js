@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
     //navbar
@@ -92,16 +90,25 @@ $(document).ready(function () {
             ioePopup.style.display = "none";
         }
     }
-
 })
 
-
+//mobile menu button
 function mobileMenuFunction() {
-    console.log("trututu")
-    var x = document.getElementById("topnav");
+    var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
         x.className = "topnav";
     }
 }
+
+//mobile skills button
+function mobileSkillsFunction() {
+    var x = document.getElementsByClass("filter-button-group");
+    if (x.className === "filter-button-group") {
+        x.className += " responsive";
+    } else {
+        x.className = "filter-button-group";
+    }
+}
+
