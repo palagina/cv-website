@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
     //navbar
@@ -10,15 +12,6 @@ $(document).ready(function () {
             current[0].className = current[0].className.replace(" active", "");
             this.className += " active";
         });
-    }
-
-    function navbarToggle() {
-        var x = document.getElementById("topnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
     }
 
     //isotope grip
@@ -49,8 +42,6 @@ $(document).ready(function () {
     $('.skill-item').mouseover(function () {
         $(this).children('img').addClass('active-skill');
     });
-
-
 
     //PADI module
     var padiPopup = document.getElementById('padiPopup');
@@ -98,3 +89,13 @@ $(document).ready(function () {
     }
 
 }) //end
+
+
+function myFunction() {
+    var x = document.getElementById("topnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
