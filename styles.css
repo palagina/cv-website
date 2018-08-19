@@ -837,7 +837,13 @@ body {
     height: 30px;
 }
 @media screen and (max-width: 600px) {
+    #contact-form span{
+        display: none;
+    }
+    #contact-form li{
+        display: inline;
+    }
     #contact-form{
-        font-size: 17px; 
+        padding-bottom: 30px;
     }
 }
