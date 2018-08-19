@@ -84,6 +84,7 @@ $(document).ready(function () {
             susPopup.style.display = "none";
         }
         else if (event.target == padiPopup) {
+            console.log("hfhfhf");
             padiPopup.style.display = "none";
         }
         else if (event.target == ioePopup) {
